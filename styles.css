@@ -1,0 +1,79 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-cyan);
+}
+.card {
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  max-width: 85%;
+  position: relative;
+}
+.photo-container {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  background-color: white;
+  border-radius: 50%;
+}
+.photo-container img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.user-info {
+  margin-top: 80px;
+}
+h1 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 10px;
+}
+.user-info span {
+  color: var(--Dark-gray);
+  font-weight: 400;
+}
+.user-info p {
+  margin: 8px 0 20px 0;
+  font-size: 14px;
+  color: var(--Dark-gray);
+}
+.user-stats {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border-top: 1px solid var(--Dark-gray);
+  text-align: center;
+}
+.user-stats p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+.user-stats p:last-child {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--Dark-gray);
+  margin-top: 5px;
+  font-weight: 600;
+}
